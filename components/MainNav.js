@@ -26,8 +26,8 @@ export default function MainNav(){
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Link href="/" passHref legacyBehavior><Nav.Link>Home</Nav.Link></Link> 
-                        <Link href="/about" passHref legacyBehavior><Nav.Link>Advanced Search</Nav.Link></Link>             
+                        <Link href="/"  passHref legacyBehavior><Nav.Link>Home</Nav.Link></Link> 
+                        <Link href="/search"  passHref legacyBehavior><Nav.Link >Advanced Search</Nav.Link></Link>             
                     </Nav>
 
                     <Form className="d-flex" onSubmit={handleSubmit}>
