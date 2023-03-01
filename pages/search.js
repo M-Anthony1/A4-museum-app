@@ -1,7 +1,6 @@
 import { Col, Form, Row, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
 
 export default function AdvanceSearch() {
   const router = useRouter();
@@ -11,32 +10,16 @@ export default function AdvanceSearch() {
   const {
     register,
     handleSubmit,
-    setValue,
     formState: { errors },
   } = useForm({
     defaultValues: {
+      q: "",
       searchBy: "title",
       geoLocation: "",
       medium: "",
       isOnView: false,
       isHighlight: false,
-      q: "",
     },
-  });
-
-  useEffect(() => {
-    let data = {
-      searchBy: "title",
-      geoLocation: "",
-      medium: "",
-      isOnView: false,
-      isHighlight: false,
-      q: "",
-    };
-
-    for (const prop in data) {
-      setValue(prop, data[prop]);
-    }
   });
 
   const submitForm = (data) => {

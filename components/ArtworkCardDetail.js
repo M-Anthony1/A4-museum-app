@@ -20,14 +20,14 @@ export default function ArtworkCardDetail({ objectID }) {
         <Card.Text>
           <strong>Date: </strong> {data.objectDate ? data.objectDate : "N/A"}
           <br />
-          <strong>Classification:</strong>
+          <strong>Classification: </strong>
           {data.classification ? data.classification : "N/A"}
           <br />
           <strong>Medium: </strong>
           {data.medium ? data.medium : "N/A"}
           <br />
           <br />
-          <strong>Artist: </strong>{" "}
+          <strong>Artist: </strong>
           {data.artistDisplayName ? data.artistDisplayName : "N/A"}
           {data.artistDisplayName && (
             <>
@@ -49,10 +49,10 @@ export default function ArtworkCardDetail({ objectID }) {
             </>
           )}
           <br />
-          <strong>Credit Line:</strong>{" "}
+          <strong>Credit Line: </strong>
           {data.creditLine ? data.creditLine : "N/A"}
           <br />
-          <strong>Dimensions: </strong>{" "}
+          <strong>Dimensions: </strong>
           {data.dimensions ? data.dimensions : "N/A"}
         </Card.Text>
       </Card.Body>

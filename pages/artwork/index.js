@@ -25,7 +25,9 @@ export default function Artwork() {
   };
 
   const nextPage = () => {
-    if (page < artworkList.length) setPage(page + 1);
+    if (page < artworkList.length) {
+      setPage(page + 1);
+    }
   };
 
   useEffect(() => {
@@ -54,7 +56,9 @@ export default function Artwork() {
     <>
       <Card>
         <Card.Body>
-          <Card.Title>Nothing Here</Card.Title>
+          <Card.Title>
+            <h4>Nothing here</h4>
+          </Card.Title>
           <Card.Text>Try search for something else.</Card.Text>
         </Card.Body>
       </Card>
