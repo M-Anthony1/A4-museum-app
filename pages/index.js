@@ -4,7 +4,7 @@
  *  No part of this assignment has been copied manually or electronically from any other source
  *  (including web sites) or distributed to other students.
  *
- *  Name: Marco Schiralli    Student ID: 118649219   Date: 02/27/23
+ *  Name: Marco Schiralli    Student ID: 118649219   Date: 02/28/23
  *
  *********************************************************************************/
 
@@ -18,6 +18,7 @@ export default function Home() {
         src="https://upload.wikimedia.org/wikipedia/commons/3/30/Metropolitan_Museum_of_Art_%28The_Met%29_-_Central_Park%2C_NYC.jpg"
         rounded
         fluid
+        alt="Metropolitan Museum Photo"
       />
       <br />
       <br />
