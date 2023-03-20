@@ -1,9 +1,13 @@
 import { Col, Form, Row, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
+import { searchHistoryAtom } from "@/store";
+import { useAtom } from "jotai";
 
 export default function AdvanceSearch() {
   const router = useRouter();
+
+  const [searchHistory, setSearchHistory] = useAtom(searchHistoryAtom);
 
   let queryString = "";
 
@@ -34,6 +38,9 @@ export default function AdvanceSearch() {
     }
 
     queryString += `&isOnView=${data.isOnView}&isHighlight=${data.isHighlight}&q=${data.q}`;
+
+    //search history
+    setSearchHistory((current) => [...current, queryString]);
 
     router.push(`/artwork?${queryString}`);
   };
