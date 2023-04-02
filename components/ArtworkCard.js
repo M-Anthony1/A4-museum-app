@@ -15,7 +15,7 @@ export default function ArtworkCard({ objectID }) {
 
   return data ? (
     <>
-      <Card style={{ width: "18rem" }}>
+      <Card>
         <Card.Img
           variant="top"
           src={
